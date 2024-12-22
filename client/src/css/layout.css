@@ -1,0 +1,36 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+  margin-left: 250px;
+}
+
+.collapsed .main-content {
+  margin-left: 60px;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+.notification-button {
+  padding: 10px 0px;
+}
+
+.logout-button{
+  margin-right: 15px;
+  padding: 10px 0px;
+}

@@ -1,0 +1,204 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eee;
+}
+
+.company-name h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #205aac;
+  margin: 0;
+  padding: 0;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.notification-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #205aac;
+  cursor: pointer;
+  position: relative;
+  margin-right: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.notification-button:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+.notification-number {
+  position: absolute;
+  top: 2px;
+  right: -5px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+}
+
+.notification-popup {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 250px;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.notification-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-popup li {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-popup li:last-child {
+  border-bottom: none;
+}
+
+/* Logout button */
+.logout-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #205aac;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.logout-button:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+.logout-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.logout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  animation: fadeIn 0.1s ease-in-out; 
+}
+
+.logout-modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #eee;
+  animation: scaleUp 0.3s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.logout-modal-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.logout-modal-content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.app-logout {
+  background-color: #fff;
+  color: #205aac;
+  border: 2px solid #205aac;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, color 0.9s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.app-logout:hover {
+  color: #205aac;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.app-logout:active {
+  background-color: #003e7e;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.logout-cancel {
+  background-color: #205aac;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logout-cancel:hover {
+  background-color: #003e7e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.logout-cancel:active {
+  background-color: #002952;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}

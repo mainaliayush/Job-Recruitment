@@ -1,0 +1,168 @@
+/* Container for the entire login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-form:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+}
+
+.form-label {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box; 
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.role-toggle {
+  display: flex;
+}
+
+.toggle-button-applicant,
+.toggle-button-employer {
+  flex: 1;
+  padding: 0.875rem;
+  font-size: 1.1rem;
+  color: #555;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button-applicant {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.toggle-button-employer {
+  border-radius: 0px 7px 7px 0px;
+}
+
+.toggle-button-applicant,
+.toggle-button-employer:hover {
+  background-color: #e0e0e0;
+}
+
+.toggle-button-applicant.active,
+.toggle-button-employer.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+}
+
+.password-wrapper .form-input {
+  padding-right: 2.5rem;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  margin-top: 7px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #888;
+}
+
+.password-toggle-icon:hover {
+  color: #007bff;
+}
+
+.switch-auth {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.switch-auth-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.switch-auth-link:hover {
+  color: #0056b3;
+}
+
+.auth-link{
+  color: #007bff;
+}
+
+.auth-link:hover {
+  color: #0056b3;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.form-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-submit-btn:active {
+  transform: scale(0.98);
+}

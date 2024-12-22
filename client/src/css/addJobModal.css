@@ -1,0 +1,122 @@
+/* Modal Overlay */
+.job-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+/* Modal Content */
+.job-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+  box-sizing: border-box;
+  transform: scale(0.8);
+  animation: scaleUp 0.3s ease-in-out forwards;
+}
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Form Styling */
+.job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper for Input Elements */
+.job-modal-wrapper {
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+.job-form label {
+  color: grey;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.job-form input,
+.job-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+}
+
+.job-form textarea {
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn,
+.close-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 5px;
+  animation: scaleUp 0.3s ease-in-out forwards;
+}
+
+.submit-btn,.close-btn:active {
+    transform: scale(0.98);
+}
+
+.submit-btn {
+  background-color: #007bff; 
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  background-color: #7f7f7f; 
+}
+
+.close-btn:hover {
+  background-color: #676767; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
